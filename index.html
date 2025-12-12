@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        body {
+            background-color: #fefefe;
+        }
+        .container {
+            background-color: rgb(20, 105, 232);
+            color: white;
+            height: 175vh;
+            width: 100vw;
+            margin: auto;
+            padding: 10px;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: -35px;
+        }
+
+        /* .container h3 {
+            text-align: center;
+            background: url("H&M\ Logo\ Without\ words_LogoMakr-3cbuVR.png") no-repeat;
+            background-size: cover;
+        } */
+
+        form {
+            height: 90vh;
+            width: 70vw;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            gap: 12px;
+            margin-top: 20px;
+            margin: 0 auto;
+        }
+
+        .margin-top {
+            margin-top: 20px;
+        }
+
+        .top {
+            background: url("UN-Logo.png") no-repeat center;
+            height: 150px;
+            width: 100%;
+            background-size: contain;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;    
+        }
+
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            border-radius: 6px;
+            outline: none;
+            border: none;
+            font-size: 16px;
+        }
+
+        input[type="radio"] {
+            margin-right: 6px;
+        }
+
+        select {
+            width: 40%;
+            padding: 10px;
+            outline: none;
+        }
+
+        button {
+            background-color: rgb(23, 94, 199);
+            color: #fefefe;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 300px) {
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="https://formspree.io/f/xqargopo" method="post">
+            <div class="top">
+                <h1>UNSA</h1>
+                <h3>SHERIDAN</h3>
+            </div>
+            <label for="name" class="margin-top">Full Name:</label>
+            <input type="text" name="name" required>
+
+            <label for="campus" class="margin-top">Which is your main campus?</label>
+            <label>
+                <input type="radio" name="campus" value="Sheridan Trafalgar">
+                Sheridan Trafalgar
+            </label>
+
+            <label>
+                <input type="radio" name="campus" value="Sheridan HMC">
+                Sheridan HMC
+            </label>
+
+            <label>
+                <input type="radio" name="campus" value="Sheridan Davis">
+                Sheridan Davis
+            </label>
+
+            <label for="program" class="margin-top">What is your program of study?</label>
+            <input type="text" name="program" required>
+
+            <label for="year" class="margin-top">Year of Program:</label>
+            <select name="year">
+                <option value="no selection">No selection</option>
+                <option value="year 1">Year 1</option>
+                <option value="year 2">Year 2</option>
+                <option value="year 3">Year 3</option>
+            </select>
+
+            <label for="email" class="margin-top">Sheridan Email:</label>
+            <input type="email" name="email" required>
+
+            <label for="reason" class="margin-top">Why do you want to join the club</label>
+            <textarea name="feedback" rows="10" placeholder="Enter your text here"></textarea>
+
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
